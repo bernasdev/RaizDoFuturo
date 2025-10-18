@@ -8,8 +8,8 @@ const Navbar04Page = () => {
   return (
     <div className="bg-muted">
       <nav
-        className="fixed top-6 inset-x-4 h-16 bg-background/75 backdrop-blur-xs border dark:border-green-900/70 max-w-(--breakpoint-xl) mx-auto rounded-full">
-        <div className="h-full flex items-center justify-between mx-auto px-4">
+        className="fixed top-6 inset-x-4 h-16 bg-background/50 backdrop-blur-xs border border-white/20 dark:border-none max-w-(--breakpoint-xl) mx-auto rounded-full">
+        <div className="h-full flex items-center justify-between mx-auto px-4"> 
           <div className="w-50 flex justify-start">
             <Logo />
           </div>
@@ -20,7 +20,7 @@ const Navbar04Page = () => {
           <div className="flex items-center gap-3 w-50 justify-end">
             {/* <Button className="rounded-full" >Me Inscrever</Button> */}
 
-            <Button className="hidden sm:inline-flex rounded-full">
+            <Button className="hidden md:inline-flex rounded-full">
               Me Inscrever
             </Button>
             <ModeToggle />

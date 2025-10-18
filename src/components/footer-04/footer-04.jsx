@@ -74,10 +74,10 @@ const Footer04Page = () => {
 
             {/* Subscribe Newsletter */}
             <div className="max-w-xs w-full">
-              <h6 className="font-medium">Stay up to date</h6>
+              <h6 className="font-medium">Receba notificações dos posts</h6>
               <form className="mt-6 flex items-center gap-2">
-                <Input type="email" placeholder="Enter your email" />
-                <Button>Subscribe</Button>
+                <Input type="email" placeholder="Digite seu email" />
+                <Button>Inscrever-se</Button>
               </form>
             </div>
           </div>
@@ -88,9 +88,9 @@ const Footer04Page = () => {
             <span className="text-muted-foreground">
               &copy; {new Date().getFullYear()}{" "}
               <Link href="/" target="_blank">
-                Shadcn UI Blocks
+                Nome da ONG
               </Link>
-              . All rights reserved.
+              . Todos os direitos reservador.
             </span>
 
             <div className="flex items-center gap-5 text-muted-foreground">
