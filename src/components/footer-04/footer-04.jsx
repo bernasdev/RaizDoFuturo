@@ -73,7 +73,7 @@ const Footer04Page = () => {
             </div>
 
             {/* Subscribe Newsletter */}
-            <div className="max-w-xs w-full">
+            <div className="max-w-xs w-full" id="subscribe">
               <h6 className="font-medium">Receba notificações dos posts</h6>
               <form className="mt-6 flex items-center gap-2">
                 <Input type="email" placeholder="Digite seu email" />
