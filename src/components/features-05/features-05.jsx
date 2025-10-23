@@ -60,7 +60,7 @@ const features = [
 
 const Features05Page = () => {
   return (
-    <div className="min-h-screen pt-15 flex items-center justify-center bg-gradient-to-b from-black from-0%  to-background to-25%" id="ecologia">
+    <div className="min-h-screen pt-15 flex items-center justify-center bg-background" id="ecologia">
       <div className="max-w-(--breakpoint-lg) w-full py-10 px-6">
         <h2 className="text-4xl md:text-[2.5rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-2xl text-pretty">
           Por que a natureza precisa de nós

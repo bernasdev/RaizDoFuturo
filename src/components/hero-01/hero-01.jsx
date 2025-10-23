@@ -7,7 +7,7 @@ import React from "react";
 const Hero01 = () => {
   return (
     <div className="relative z-10 min-h-150 flex items-end pt-15 2xs:pt-0 pb-10 justify-center px-6 bg-[url('/img/folhas.jpg')] bg-cover bg-center">
-      <div className="absolute z-0 inset-0 bg-gradient-to-b from-black via-black/55 to-black"></div>
+      <div className="absolute z-0 inset-0 bg-gradient-to-b from-black via-black/55 to-background"></div>
       <div className="text-center max-w-4xl z-10 pt-15 pb-0">
 
         <Badge
