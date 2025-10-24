@@ -60,7 +60,10 @@ const features = [
 
 const Features05Page = () => {
   return (
-    <div className="min-h-screen pt-15 flex items-center justify-center bg-background" id="ecologia">
+    <div
+      className="min-h-screen pt-15 flex items-center justify-center bg-background"
+      id="ecologia"
+    >
       <div className="max-w-(--breakpoint-lg) w-full py-10 px-6">
         <h2 className="text-4xl md:text-[2.5rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-2xl text-pretty">
           Por que a natureza precisa de nós
@@ -76,7 +79,7 @@ const Features05Page = () => {
             <Card
               key={feature.title}
               className="group flex flex-col border rounded-xl overflow-hidden shadow-none pb-0 bg-background min-h-100
-  transition ease-in  hover:-translate-y-3.5 hover:bg-primary/25 hover:shadow-emerald-100"
+              transition ease-in hover:-translate-y-3.5 hover:bg-primary/33 hover:shadow-emerald-100 active:-translate-y-3.5 active:bg-primary/33 active:shadow-emerald-100"
             >
               <CardHeader>
                 <feature.icon />
@@ -91,7 +94,7 @@ const Features05Page = () => {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="h-50 w-full object-cover ml-6 rounded-tl-xl transition-transform duration-500 group-hover:translate-x-[-1.5rem]"
+                  className="h-50 w-full object-cover ml-6 rounded-tl-xl transition-transform duration-500 group-focus:translate-x-[-1.5rem] group-active:translate-x-[-1.5rem]"
                 />
               </CardContent>
             </Card>
