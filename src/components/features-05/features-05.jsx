@@ -94,7 +94,7 @@ const Features05Page = () => {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="h-50 w-full object-cover ml-6 rounded-tl-xl transition-transform duration-500 group-focus:translate-x-[-1.5rem] group-active:translate-x-[-1.5rem]"
+                  className="h-50 w-full object-cover ml-6 rounded-tl-xl transition-transform duration-500 group-hover:translate-x-[-1.5rem] group-active:translate-x-[-1.5rem]"
                 />
               </CardContent>
             </Card>
