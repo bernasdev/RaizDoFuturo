@@ -12,14 +12,14 @@ const Navbar04Page = () => {
         className="fixed top-6 z-50 inset-x-4 h-16  backdrop-blur-xs backdrop-brightness-50 border-[0.25px]
              max-w-(--breakpoint-xl) mx-auto rounded-full">
         <div className="h-full flex items-center justify-between mx-auto px-4">
-          <div className="w-auto sm:w-50 flex justify-start">
+          <div className="w-50 flex justify-start">
             <Logo />
           </div>
 
           {/* Desktop Menu */}
           <NavMenu className="hidden md:block" />
 
-          <div className="flex items-center gap-3 w-50 justify-end">
+          <div className="flex items-center gap-3 sm:w-50 justify-end">
             {/* <Button className="rounded-full" >Me Inscrever</Button> */}
 
 
