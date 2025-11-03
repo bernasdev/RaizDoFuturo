@@ -1,3 +1,5 @@
+"use client";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -5,32 +7,47 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import clsx from "clsx";
 
-export const NavMenu = (props) => (
-  <NavigationMenu {...props}>
-    <NavigationMenuList
-      className="gap-3 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
-      <NavigationMenuItem>
-        <NavigationMenuLink asChild>
-          <Link href={'/#home'}>Home</Link>
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuLink asChild>
-          <Link href={'/#ecologia'}>Ecologia</Link>
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuLink asChild>
-          <Link href={'/sobre'}>Sobre Nós</Link>
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuLink asChild>
-          <Link href={'/blog'}>Blog</Link>
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-      
-    </NavigationMenuList>
-  </NavigationMenu>
-);
+export const NavMenu = ({ orientation = "horizontal", className }) => {
+  const isVertical = orientation === "vertical";
+
+  return (
+    <NavigationMenu
+      className={clsx(
+        "relative z-50",
+        isVertical
+          ? "flex flex-col items-start justify-start"
+          : "flex flex-row items-center justify-center",
+        className
+      )}
+    >
+      <NavigationMenuList
+        className={clsx(
+          "gap-4",
+          isVertical
+            ? "flex-col items-start justify-start"
+            : "flex-row items-center justify-center"
+        )}
+      >
+        {[
+          { href: "/#home", label: "Home" },
+          { href: "/#ecologia", label: "Ecologia" },
+          { href: "/sobre", label: "Sobre Nós" },
+          { href: "/blog", label: "Blog" },
+        ].map((item) => (
+          <NavigationMenuItem key={item.href}>
+            <NavigationMenuLink asChild>
+              <Link
+                href={item.href}
+                className="text-lg transition-colors text-foreground"
+              >
+                {item.label}
+              </Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+        ))}
+      </NavigationMenuList>
+    </NavigationMenu>
+  );
+};

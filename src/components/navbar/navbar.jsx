@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
-import { ModeToggle } from "../theme/theme-toggle";
 import Link from "next/link";
 
 const NavbarPage = () => {
@@ -10,20 +9,20 @@ const NavbarPage = () => {
     <div className="bg-muted">
       <nav
         className="fixed top-6 z-50 inset-x-4 h-16  backdrop-blur-xs backdrop-brightness-50 border-[0.25px]
-             max-w-(--breakpoint-xl) mx-auto rounded-full">
-        <div className="h-full flex items-center justify-between mx-auto px-4 ">
-          <div className="w-50 flex justify-start">
+             max-w-(--breakpoint-xl) mx-auto rounded-full overflow-visible">
+        <div className="flex items-center justify-between h-full px-4 mx-auto ">
+          <div className="flex justify-start w-50">
             <Logo />
           </div>
 
           {/* Desktop Menu */}
           <NavMenu className="hidden md:block" />
 
-          <div className="flex items-center gap-3 sm:w-50 justify-end">
+          <div className="flex items-center justify-end gap-3 sm:w-50">
             {/* <Button className="rounded-full" >Me Inscrever</Button> */}
 
 
-            <Button className="hidden md:inline-flex rounded-full"  >
+            <Button className="hidden rounded-full md:inline-flex"  >
               <Link href="#subscribe">
               Me Inscrever
               </Link>
