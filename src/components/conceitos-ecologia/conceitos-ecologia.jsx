@@ -8,7 +8,7 @@ import {
   CloudSun,
 } from "lucide-react";
 
-const features = [
+const conceitos = [
   {
     icon: Leaf,
     title: "Biodiversidade",
@@ -58,7 +58,7 @@ const features = [
   },
 ];
 
-const Features05Page = () => {
+const ConceitosEcologia = () => {
   return (
     <div
       className="min-h-screen pt-15 flex items-center justify-center bg-background"
@@ -75,25 +75,25 @@ const Features05Page = () => {
           Conheça os pilares que sustentam a vida no planeta.
         </p>
         <div className="mt-10 w-full mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
-          {features.map((feature) => (
+          {conceitos.map((conceito) => (
             <Card
-              key={feature.title}
+              key={conceito.title}
               className="group flex flex-col border rounded-xl overflow-hidden shadow-none pb-0 bg-background min-h-100
               transition ease-in hover:-translate-y-3.5 hover:bg-primary/33 hover:shadow-emerald-100 active:-translate-y-3.5 active:bg-primary/33 active:shadow-emerald-100"
             >
               <CardHeader>
-                <feature.icon />
+                <conceito.icon />
                 <h4 className="mt-3 text-xl font-semibold tracking-tight">
-                  {feature.title}
+                  {conceito.title}
                 </h4>
                 <p className="mt-1 text-muted-foreground text-[17px]">
-                  {feature.description}
+                  {conceito.description}
                 </p>
               </CardHeader>
               <CardContent className="mt-auto px-0 pb-0">
                 <img
-                  src={feature.image}
-                  alt={feature.title}
+                  src={conceito.image}
+                  alt={conceito.title}
                   className="h-50 w-full object-cover ml-6 rounded-tl-xl transition-transform duration-500 group-hover:translate-x-[-1.5rem] group-active:translate-x-[-1.5rem]"
                 />
               </CardContent>
@@ -105,4 +105,4 @@ const Features05Page = () => {
   );
 };
 
-export default Features05Page;
+export default ConceitosEcologia;

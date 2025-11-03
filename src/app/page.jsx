@@ -1,11 +1,11 @@
-import Features05Page from "@/components/features-05/features-05";
-import Hero01 from "@/components/hero-01/hero-01";
+import ConceitosEcologia from "@/components/conceitos-ecologia/conceitos-ecologia";
+import HeroHome from "@/components/hero-home/hero-home";
 
 export default function Home() {
   return (
     <div className="w-full flex flex-col justify-center">
-      <Hero01 />
-      <Features05Page/>
+      <HeroHome />
+      <ConceitosEcologia/>
     </div>
   );
 }

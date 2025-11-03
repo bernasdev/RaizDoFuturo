@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-const Hero01 = () => {
+const HeroHome = () => {
   return (
     <div
       id="home"
@@ -45,4 +45,4 @@ const Hero01 = () => {
   );
 };
 
-export default Hero01;
+export default HeroHome;

@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar04Page from "@/components/navbar-04/navbar-04";
-import Footer04Page from "@/components/footer-04/footer-04";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ModeToggle } from "@/components/theme/theme-toggle";
+import FooterPage from "@/components/footer/footer";
+import NavbarPage from "@/components/navbar/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "BioBlog",
-  description: "Blog sobre Ecologia",
+  title: "Raiz do Futuro",
+  description:
+    "Blog sobre Ecologia e importância da preservação de Unidades de conservação",
 };
 
 export default function RootLayout({ children }) {
@@ -32,12 +33,10 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar04Page />
+          <NavbarPage />
           {children}
-          <Footer04Page />
-          
+          <FooterPage />
         </ThemeProvider>
-
       </body>
     </html>
   );

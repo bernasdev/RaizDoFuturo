@@ -93,3 +93,16 @@
   --breakpoint-xs: 15rem;
   --breakpoint-2xs: 30rem;
 }
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}

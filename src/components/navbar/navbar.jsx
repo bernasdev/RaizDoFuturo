@@ -5,13 +5,13 @@ import { NavigationSheet } from "./navigation-sheet";
 import { ModeToggle } from "../theme/theme-toggle";
 import Link from "next/link";
 
-const Navbar04Page = () => {
+const NavbarPage = () => {
   return (
     <div className="bg-muted">
       <nav
         className="fixed top-6 z-50 inset-x-4 h-16  backdrop-blur-xs backdrop-brightness-50 border-[0.25px]
              max-w-(--breakpoint-xl) mx-auto rounded-full">
-        <div className="h-full flex items-center justify-between mx-auto px-4">
+        <div className="h-full flex items-center justify-between mx-auto px-4 ">
           <div className="w-50 flex justify-start">
             <Logo />
           </div>
@@ -41,4 +41,4 @@ const Navbar04Page = () => {
   );
 };
 
-export default Navbar04Page;
+export default NavbarPage;
