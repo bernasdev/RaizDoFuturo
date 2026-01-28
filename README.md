@@ -48,18 +48,18 @@ Este projeto foi construído como um laboratório de Design System e UI, focando
    
 2. **Instale as dependências:**
 
-```bash
-cd RaizDoFuturo
-npm install
-```
+   ```bash
+   cd RaizDoFuturo
+   npm install
+   ```
 
-Inicie o servidor de desenvolvimento:
+3. **Inicie o servidor de desenvolvimento:**
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-Acesse no navegador: http://localhost:3000
+4. **Acesse no navegador:** [http://localhost:3000](http://localhost:3000)
 
 ---
 
